@@ -11,8 +11,8 @@ const menuItems = [
 ];
 
 const socialLinks = [
-    { icon: <BsLinkedin />, href: "https://www.linkedin.com/in/thamindu-sharitha-509a70229/", color: 'text-blue-300' },
-    { icon: <BsGithub />, href: "https://github.com/Thamindu-Galappaththi", color: 'text-purple-500' },
+    { icon: <BsLinkedin />, href: "https://www.linkedin.com/in/channa-karawita-5a2924211/", color: 'text-blue-300' },
+    { icon: <BsGithub />, href: "https://github.com/Ch4nnXDev", color: 'text-purple-500' },
     { 
         icon: <BsFileEarmarkArrowDown />, 
         href: "/Thamindu_Portfolio/Thamindu_CV.pdf", 
@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <nav className='fixed top-0 z-10 flex w-full items-center justify-between border-b-gray-700 bg-black/70 p-16 py-6 text-white backdrop-blur-md md:justify-evenly'>
     <a href="#home" className='bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent opacity-80 text-3xl font-semibold transition-all duration-300 hover:opacity-100'>
-        Thamindu Galapaththi
+        Channa Karawita
     </a>
 
     {/* Desktop Menu */}

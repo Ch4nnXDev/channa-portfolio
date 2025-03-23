@@ -1,4 +1,4 @@
-import cartoon from "/public/Code&Chill.png"
+import cartoon from "/public/my.jpeg"
 import {motion} from "framer-motion"
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
                     transition={{duration:0.8,delay:0.2}}
                     className='flex max-w-[600px] flex-col items-center justify-center gap-3 text-center ' >
                     <h1 className='bg-gradient-to-r from-blue-100 to-blue-400 bg-clip-text text-transparent text-5xl font-light md:text-7xl ' >
-                       Thamindu Galapaththi
+                       Channa Karawita
                     </h1>
                     <h3 className='bg-gradient-to-r from-blue-400 to-blue-100 bg-clip-text text-transparent text-2xl font-light md:text-3xl '>
                         Software Engineer & Full-Stack Developer
