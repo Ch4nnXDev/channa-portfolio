@@ -1,9 +1,8 @@
 import { AiOutlineGithub } from 'react-icons/ai'
 import Reveal from './Reveal';
-import example from "/public/example.png"
-import example1 from "/public/example1.png"
-import example2 from "/public/example2.jpg"
-import example3 from "/public/example3.png"
+import example from "/public/ASL.jpeg"
+import example2 from "/public/sentiment-analysis.jpeg"
+import example3 from "/public/hqdefault.jpeg"
 import { CiLink } from "react-icons/ci";
 
 const projects = [
@@ -16,15 +15,7 @@ const projects = [
         github: "https://www.youtube.com/shorts/J0NaDPV54Jg",
       },
     },
-    {
-        img:example1,
-        title: "Arduino",
-      description: "An open-source electronics platform based on easy-to-use hardware and software, enabling users to create interactive projects.",
-      links: {
-        site: "https://www.youtube.com/@CodeChill23/shorts",
-        github: "https://www.youtube.com/@CodeChill23/shorts",
-      },
-    },
+    
     {
         img:example2,
         title: "FreeCAD",
