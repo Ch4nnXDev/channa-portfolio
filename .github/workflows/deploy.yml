@@ -1,5 +1,58 @@
-- name: Upload production-ready build files
-  uses: actions/upload-artifact@v3
-  with:
-    name: production-files
-    path: ./dist  # Ensure your build output goes here
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write  # Required for GitHub Pages deployment
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # Change if your project requires a different version
+
+      - name: Install dependencies
+        run: npm ci  # Ensures a clean install from package-lock.json
+
+      - name: Build project
+        run: npm run build  # Ensure this generates the "dist/" folder
+
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v3
+        with:
+          name: production-files
+          path: ./dist  # Ensure your build output goes here
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: production-files
+          path: ./dist  # Ensure this matches the upload path
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages  # Ensure deployment to GitHub Pages
