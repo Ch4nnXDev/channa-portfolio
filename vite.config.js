@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:"/Portfolio" //same name as your repo
+  base:"/channa-portfolio" //same name as your repo
 })
