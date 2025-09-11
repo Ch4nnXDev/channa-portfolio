@@ -49,7 +49,7 @@ const projects = [
       technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
       links: {
         site: "https://www.youtube.com/shorts/elvE8xaTd28",
-        github: "https://www.youtube.com/shorts/elvE8xaTd28",
+        github: "https://github.com/Ch4nnXDev/Neural-network-from-scratch/",
       },
     },
   ];
