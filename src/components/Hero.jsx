@@ -22,7 +22,7 @@ const Hero = () => {
                        Channa Karawita
                     </h1>
                     <h3 className='bg-gradient-to-r from-blue-400 to-blue-100 bg-clip-text text-transparent text-2xl font-light md:text-3xl '>
-                        Software Engineer & Full-Stack Developer
+                        Software Engineer & AI Systems Developer
 
                     </h3>
                     <p className='md:text-base text-pretty text-sm text-gray-400'>

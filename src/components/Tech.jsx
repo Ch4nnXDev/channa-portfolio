@@ -6,7 +6,6 @@ import {
   BiLogoGithub,
   BiLogoGitlab,
   BiLogoHtml5,
-  BiLogoJava,
   BiLogoJavascript,
   BiLogoMongodb,
   BiLogoPostgresql,
@@ -16,9 +15,14 @@ import {
   BiLogoTypescript,
   BiLogoPython,
   BiLogoPhp,
-  BiLogoCPlusPlus,
+  BiLogoJava,
+  BiLogoNodejs,
+  BiLogoAws,
+
 } from "react-icons/bi";
-import { SiExpress, SiDotnet, SiCplusplus } from "react-icons/si";
+
+import { SiExpress,
+  SiTensorflow  } from "react-icons/si";
 import { motion } from "framer-motion";
 import Reveal from "./Reveal";
 
@@ -30,21 +34,20 @@ const skills = [
       { name: "CSS", icon: <BiLogoCss3 className="text-blue-600" /> },
       { name: "Bootstrap", icon: <BiLogoBootstrap className="text-purple-600" /> },
       { name: "Tailwind CSS", icon: <BiLogoTailwindCss className="text-teal-500" /> },
-      { name: "JavaScript", icon: <BiLogoJavascript className="text-yellow-500" /> },
       { name: "React", icon: <BiLogoReact className="text-cyan-500" /> },
       { name: "Angular", icon: <BiLogoAngular className="text-red-500" /> },
-      { name: "TypeScript", icon: <BiLogoTypescript className="text-blue-500" /> },
+     
     ],
   },
   {
     category: "Backend",
     technologies: [
+
       { name: "MongoDB", icon: <BiLogoMongodb className="text-green-600" /> },
       { name: "PostgreSQL", icon: <BiLogoPostgresql className="text-blue-700" /> },
-      { name: "Java", icon: <BiLogoJava className="text-orange-700" /> },
       { name: "Express.js", icon: <SiExpress className="text-gray-600" /> },
-      { name: ".NET", icon: <SiDotnet className="text-blue-600" /> },
       { name: "Spring Boot", icon: <BiLogoSpringBoot className="text-green-500" /> },
+      { name: "Node.js", icon: <BiLogoNodejs className="text-green-600" /> },
     ],
   },
   {
@@ -53,6 +56,7 @@ const skills = [
       { name: "Docker", icon: <BiLogoDocker className="text-blue-500" /> },
       { name: "GitHub", icon: <BiLogoGithub className="text-gray-600" /> },
       { name: "GitLab", icon: <BiLogoGitlab className="text-orange-600" /> },
+      { name: "AWS", icon: <BiLogoAws className="text-yellow-500" /> },
     ],
   },
   {
@@ -60,9 +64,21 @@ const skills = [
     technologies: [
       { name: "Python", icon: <BiLogoPython className="text-yellow-500" /> },
       { name: "PHP", icon: <BiLogoPhp className="text-purple-600" /> },
-      { name: "C++", icon: <SiCplusplus className="text-blue-500" /> },
+      { name: "Java", icon: <BiLogoJava className="text-orange-700" /> },
+      { name: "JavaScript", icon: <BiLogoJavascript className="text-yellow-500" /> },
+      { name: "TypeScript", icon: <BiLogoTypescript className="text-blue-500" /> },
+
     ],
   },
+  {
+    category: "AI / Machine Learning / Data Science",
+    technologies: [
+      { name: "TensorFlow", icon: <SiTensorflow className="text-orange-600" /> },
+
+
+    ],
+}
+
 ];
 
 const Tech = () => {

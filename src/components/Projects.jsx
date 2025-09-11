@@ -1,34 +1,52 @@
 import { AiOutlineGithub } from 'react-icons/ai'
 import Reveal from './Reveal';
-import example from "/public/ASL.jpeg"
-import example2 from "/public/sentiment-analysis.jpeg"
-import example3 from "/public/hqdefault.jpeg"
+import example from "/public/nn.jpeg"
+import example2 from "/public/chat.jpeg"
+import example3 from "/public/graph-Rag.jpeg"
 import { CiLink } from "react-icons/ci";
+import {
+  
+
+ 
+
+  BiLogoMongodb,
+
+  BiLogoReact,
+
+  BiLogoTailwindCss,
+
+  BiLogoNodejs,
+  BiLogoAws,
+
+} from "react-icons/bi";
 
 const projects = [
     {
       img:example3,
-      title: "Fedora Project",
-      description: "An open-source operating system based on Linux, aiming to provide innovative features and rapid advancements.",
+      title: "Graph Rag Application",
+      description: "Developed a Retrieval-Augmented Generation (RAG) system that leverages a graph-based knowledge store to provide precise and context-aware answers. Integrated Neo4j for storing entity relationships and vector embeddings for semantic search, enabling the system to retrieve relevant information efficiently. Built with a modular architecture to handle large-scale data retrieval, question-answering, and dynamic knowledge updates, demonstrating expertise in graph databases, NLP pipelines, and AI-powered retrieval systems.",
+      technologies: [<BiLogoReact className="text-orange-600"/>],
       links: {
         site: "https://www.youtube.com/shorts/J0NaDPV54Jg",
-        github: "https://www.youtube.com/shorts/J0NaDPV54Jg",
+        github: "https://github.com/Ch4nnXDev/graph-rag-app",
       },
     },
     
     {
         img:example2,
-        title: "FreeCAD",
-      description: "An open-source parametric 3D CAD modeler made primarily to design real-life objects of any size.",
+        title: "Distributed Real time Chat Application",
+      description: "A real-time chat application built using a microservices architecture, with each service running on different ports to ensure modularity and independent scaling. Leveraging Kafka for high-throughput event streaming, API Gateway for routing and request management, and load balancing for fault tolerance and high availability. The system supports concurrent users, persistent messaging, and seamless synchronization across clients, showcasing expertise in distributed systems, scalable backend design, and microservices orchestration.",
+      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
       links: {
         site: "https://www.youtube.com/shorts/uX9-V7r9wqU",
-        github: "https://www.youtube.com/shorts/uX9-V7r9wqU",
+        github: "https://github.com/Ch4nnXDev/Distributed-Chat-Application",
       },
     },
     {
         img:example,
-        title: "GIMP",
-      description: "An open-source raster graphics editor used for tasks such as photo retouching, image editing, and image composition.",
+        title: "Neural Network from Scratch with Tensorflow",
+      description: "Built a fully connected neural network from scratch using raw TensorFlow operations, without relying on Keras. Implemented forward propagation, backpropagation, and gradient descent manually to train the model for classification tasks. This project demonstrates a solid understanding of deep learning fundamentals, tensor operations, and training loops, highlighting hands-on experience with low-level neural network implementation in TensorFlow.",
+      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
       links: {
         site: "https://www.youtube.com/shorts/elvE8xaTd28",
         github: "https://www.youtube.com/shorts/elvE8xaTd28",
@@ -56,6 +74,13 @@ const Projects = () => {
             <div className='w-full md:w-1/2 p-4 flex flex-col justify-center'>
                 <h3 className='text-2xl font-semibold text-gray-200 mb-4'>{project.title}</h3>
                 <p className='text-gray-300 mb-4'>{project.description}</p>
+                <div className="flex space-x-4 mb-4">
+                  {project.technologies && project.technologies.map((tech, index) => (
+                    <span key={index} className="border-purple-900 p-2 rounded-lg bg-purple-900/20 shadow-lg">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
                
                 <div className='flex space-x-4'>
                    

@@ -15,7 +15,7 @@ const socialLinks = [
     { icon: <BsGithub />, href: "https://github.com/Ch4nnXDev", color: 'text-purple-500' },
     { 
         icon: <BsFileEarmarkArrowDown />, 
-        href: "/Thamindu_Portfolio/Thamindu_CV.pdf", 
+        href: "/channa-portfolio/Channa-Karawita-CV.pdf", 
         color: "text-green-500", 
         title: "Download CV" 
       }
@@ -41,7 +41,13 @@ const Navbar = () => {
     const renderSocialLinks = (className) => (
         socialLinks.map((link, index) => (
             <li key={index} className={`cursor-pointer text-xl opacity-70 transition-all duration-300 hover:opacity-100 ${className}`}>
-                <a href={link.href} target="_blank" rel="noopener noreferrer" className={link.color}>
+                <a 
+                href={link.href} 
+                target={link.title === "Download CV" ? "_self" : "_blank"} 
+                rel={link.title === "Download CV" ? undefined : "noopener noreferrer"} 
+                className={link.color}
+                {...(link.title === "Download CV" && { download: true })}
+                >
                     {link.icon}
                 </a>
             </li>
