@@ -27,7 +27,7 @@ const projects = [
       description: "Developed a Retrieval-Augmented Generation (RAG) system that leverages a graph-based knowledge store to provide precise and context-aware answers. Integrated Neo4j for storing entity relationships and vector embeddings for semantic search, enabling the system to retrieve relevant information efficiently. Built with a modular architecture to handle large-scale data retrieval, question-answering, and dynamic knowledge updates, demonstrating expertise in graph databases, NLP pipelines, and AI-powered retrieval systems.",
       technologies: [<BiLogoReact className="text-orange-600"/>],
       links: {
-        site: "https://www.youtube.com/shorts/J0NaDPV54Jg",
+        site: "",
         github: "https://github.com/Ch4nnXDev/graph-rag-app",
       },
     },
@@ -36,9 +36,9 @@ const projects = [
         img:example2,
         title: "Distributed Real time Chat Application",
       description: "A real-time chat application built using a microservices architecture, with each service running on different ports to ensure modularity and independent scaling. Leveraging Kafka for high-throughput event streaming, API Gateway for routing and request management, and load balancing for fault tolerance and high availability. The system supports concurrent users, persistent messaging, and seamless synchronization across clients, showcasing expertise in distributed systems, scalable backend design, and microservices orchestration.",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
+      technologies: [<BiLogoReact className="text-orange-600"/>],
       links: {
-        site: "https://www.youtube.com/shorts/uX9-V7r9wqU",
+        site: "",
         github: "https://github.com/Ch4nnXDev/Distributed-Chat-Application",
       },
     },
@@ -48,7 +48,7 @@ const projects = [
       description: "Built a fully connected neural network from scratch using raw TensorFlow operations, without relying on Keras. Implemented forward propagation, backpropagation, and gradient descent manually to train the model for classification tasks. This project demonstrates a solid understanding of deep learning fundamentals, tensor operations, and training loops, highlighting hands-on experience with low-level neural network implementation in TensorFlow.",
       technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
       links: {
-        site: "https://www.youtube.com/shorts/elvE8xaTd28",
+        site: "",
         github: "https://github.com/Ch4nnXDev/Neural-network-from-scratch/",
       },
     },
