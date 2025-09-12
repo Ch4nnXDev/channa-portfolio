@@ -15,7 +15,7 @@ const socialLinks = [
     { icon: <BsGithub />, href: "https://github.com/Ch4nnXDev", color: 'text-purple-500' },
     { 
         icon: <BsFileEarmarkArrowDown />, 
-        href: "/channa-portfolio/Channa-Karawita-CV.pdf", 
+        href: "/channa-portfolio/Channa_Karawita-CV.pdf", 
         color: "text-green-500", 
         title: "Download CV" 
       }
