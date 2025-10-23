@@ -61,7 +61,7 @@ const projects = [
       description: "Built and hosted the official website of anuradhapura sexual health centre. used nextJs and Typescript build and hosted on vercel click the link and see. still development is ongoing",
       technologies: [<BiLogoReact key="" className="text-orange-600"/>, <BiLogoNodejs key="" className="text-green-600" />, <BiLogoTailwindCss key="" className="text-blue-400" />],
       links: {
-        site: "sexualhealthcentreanuradhapura.lk"
+        site: "https://sexualhealthcentreanuradhapura.lk"
         
       },
 
