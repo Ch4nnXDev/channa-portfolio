@@ -1,4 +1,4 @@
-import cartoon from "/public/my.jpeg"
+import cartoon from "/my.jpeg"
 import {motion} from "framer-motion"
 
 const Hero = () => {

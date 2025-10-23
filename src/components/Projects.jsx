@@ -1,22 +1,24 @@
 import { AiOutlineGithub } from 'react-icons/ai'
 import Reveal from './Reveal';
-import example from "/public/nn.jpeg"
-import example2 from "/public/chat.jpeg"
-import example3 from "/public/graph-Rag.jpeg"
+import example from "/nn.jpeg"
+import example2 from "/chat.jpeg"
+import example3 from "/graph-Rag.jpeg"
+import example4 from "/website-home.png"
+
 import { CiLink } from "react-icons/ci";
 import {
   
 
  
 
-  BiLogoMongodb,
+
 
   BiLogoReact,
-
-  BiLogoTailwindCss,
-
   BiLogoNodejs,
-  BiLogoAws,
+  BiLogoTailwindCss,
+  
+
+
 
 } from "react-icons/bi";
 
@@ -25,9 +27,9 @@ const projects = [
       img:example3,
       title: "Graph Rag Application",
       description: "Developed a Retrieval-Augmented Generation (RAG) system that leverages a graph-based knowledge store to provide precise and context-aware answers. Integrated Neo4j for storing entity relationships and vector embeddings for semantic search, enabling the system to retrieve relevant information efficiently. Built with a modular architecture to handle large-scale data retrieval, question-answering, and dynamic knowledge updates, demonstrating expertise in graph databases, NLP pipelines, and AI-powered retrieval systems.",
-      technologies: [<BiLogoReact className="text-orange-600"/>],
+      technologies: [<BiLogoReact className="text-orange-600" key="" />, <BiLogoTailwindCss key="" className="text-blue-400" />],
       links: {
-        site: "",
+
         github: "https://github.com/Ch4nnXDev/graph-rag-app",
       },
     },
@@ -36,9 +38,9 @@ const projects = [
         img:example2,
         title: "Distributed Real time Chat Application",
       description: "A real-time chat application built using a microservices architecture, with each service running on different ports to ensure modularity and independent scaling. Leveraging Kafka for high-throughput event streaming, API Gateway for routing and request management, and load balancing for fault tolerance and high availability. The system supports concurrent users, persistent messaging, and seamless synchronization across clients, showcasing expertise in distributed systems, scalable backend design, and microservices orchestration.",
-      technologies: [<BiLogoReact className="text-orange-600"/>],
+      technologies: [<BiLogoReact key="" className="text-orange-600"/>, <BiLogoNodejs key="" className="text-green-600" />, <BiLogoTailwindCss key="" className="text-blue-400" />],
       links: {
-        site: "",
+
         github: "https://github.com/Ch4nnXDev/Distributed-Chat-Application",
       },
     },
@@ -46,11 +48,23 @@ const projects = [
         img:example,
         title: "Neural Network from Scratch with Tensorflow",
       description: "Built a fully connected neural network from scratch using raw TensorFlow operations, without relying on Keras. Implemented forward propagation, backpropagation, and gradient descent manually to train the model for classification tasks. This project demonstrates a solid understanding of deep learning fundamentals, tensor operations, and training loops, highlighting hands-on experience with low-level neural network implementation in TensorFlow.",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
+      technologies: [<BiLogoReact key="" className="text-orange-600"/>, ],
       links: {
-        site: "",
+
         github: "https://github.com/Ch4nnXDev/Neural-network-from-scratch/",
       },
+      
+    },
+    {
+      img: example4,
+      title: "Anuradhapura Sexual Health Centre Official Website",
+      description: "Built and hosted the official website of anuradhapura sexual health centre. used nextJs and Typescript build and hosted on vercel click the link and see. still development is ongoing",
+      technologies: [<BiLogoReact key="" className="text-orange-600"/>, <BiLogoNodejs key="" className="text-green-600" />, <BiLogoTailwindCss key="" className="text-blue-400" />],
+      links: {
+        site: "sexualhealthcentreanuradhapura.lk"
+        
+      },
+
     },
   ];
   
@@ -58,7 +72,7 @@ const Projects = () => {
   return (
     <div id="projects">
     <div className='max-w-[1000px] mx-auto p-6 md:my-20' >
-    <h2 className='text-3xl font-bold text-gray-200 mb-8'>Intenships & Academic Projects</h2>
+    <h2 className='text-3xl font-bold text-gray-200 mb-8'>Personal Projects</h2>
     {projects.map((project, index) => (
         // eslint-disable-next-line react/jsx-key
         <Reveal>
